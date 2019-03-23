@@ -29,7 +29,7 @@ int main()
       sleep(1);
       continue;
     }
-    printf("stdin : %s\n",buf);
+    printf("stdin : %s",buf);
   }
   return 0;
 }
