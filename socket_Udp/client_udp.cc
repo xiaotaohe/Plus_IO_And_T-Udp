@@ -36,6 +36,7 @@ int main(int argc,char* argv[])
     fflush(stdout);
     scanf("%s",buf);
     sendto(udp_sock,buf,1024,0,(const struct sockaddr*)&addr,len);
+    
     int sz = recvfrom(udp_sock,buf,1024,0,(struct sockaddr*)&addr,&len); 
     if(sz<0)
     {
